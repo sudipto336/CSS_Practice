@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  background-color: bisque;
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+}
