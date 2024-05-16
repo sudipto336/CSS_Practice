@@ -1,0 +1,21 @@
+public List<Position>FindPositionOfNumber([int][int] a, int number)
+{
+  List<Positon> potionList= new List<Position>;
+  for(int row=0; row < 3; row++)
+  {
+    for(int col = 0; col<3; col++){
+      if(a[row][col] == number)
+      {
+        potionList.Add(new Position(){
+         RowNumber = row,
+	 ColNumber = col
+        });      
+      }
+    }
+  }
+  return potionList;
+}
+public class Position{
+ public int RowNumber { get; set; }
+ public int ColNumber { get; set; }
+}
